@@ -7,7 +7,7 @@
 # Date                         Version      Changes
 #------------------------------------------------------------------------
 # 07/09/2020                     1.0        Intial Version
-#
+# 03/18/2021			 1.5        Added Sysprep for own purposis
 
 #*********************************************************************************
 #
@@ -45,5 +45,4 @@ add-content c:\Optimize\install.log "Starting Optimizations"
 .\Win10_VirtualDesktop_Optimize.ps1 -WindowsVersion 2009 -Verbose
 
 Remove-Item C:\windows\Panther\ -Recurse
-Set-Location C:\windows\System32\Sysprep
-.\sysprep /generalize /oobe /shutdown
+C:\windows\System32\Sysprep\sysprep /generalize /oobe /shutdown /mode:vm
