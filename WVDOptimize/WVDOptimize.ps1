@@ -44,5 +44,3 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force -Verbose
 add-content c:\Optimize\install.log "Starting Optimizations"  
 .\Win10_VirtualDesktop_Optimize.ps1 -WindowsVersion 2009 -Verbose
 
-Remove-Item C:\windows\Panther\ -Recurse
-C:\windows\System32\Sysprep\sysprep /generalize /oobe /shutdown /mode:vm
